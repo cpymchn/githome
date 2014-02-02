@@ -2,7 +2,6 @@ set nocompatible            " get rid of Vi compatibility mode. SET FIRST!
 execute pathogen#infect()
 syntax enable               " enable syntax highlighting
 set t_Co=256                " enable 256-color mode.
-colorscheme molokai         " set colorscheme
 set cul                     " highlight current line
 set ruler                   " Always show info along bottom.
 set encoding=utf8           " Set utf8 as standard encoding and en_US as the standard language
@@ -31,3 +30,4 @@ augroup END
 
 "set listchars=tab:\|\<Space> "It was a vertical line showing the Tab characters.
 "set smarttab                 " Use tabs at the start of a line, spaces elsewhere
+"colorscheme molokai         " set colorscheme
