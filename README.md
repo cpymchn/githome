@@ -4,6 +4,6 @@ Installation:
 
 Create Symlinks:
 
-  ln -s ~/githome/vimrc ~/.vimrc
-  ln -s ~/githome/vim ~/.vim
-  ln -s ~/githome/bashrc ~/.bashrc
+  ln -s ~/githome/vimrc ~/.vimrc  
+  ln -s ~/githome/vim ~/.vim  
+  ln -s ~/githome/bashrc ~/.bashrc  
