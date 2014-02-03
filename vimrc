@@ -2,6 +2,7 @@ set nocompatible            " get rid of Vi compatibility mode. SET FIRST!
 execute pathogen#infect()
 syntax enable               " enable syntax highlighting
 set t_Co=256                " enable 256-color mode.
+colorscheme evening         " set colorscheme
 set cul                     " highlight current line
 set ruler                   " Always show info along bottom.
 set encoding=utf8           " Set utf8 as standard encoding and en_US as the standard language
@@ -18,10 +19,10 @@ filetype indent on          " filetype detection[ON] plugin[ON] indent[ON]
 set omnifunc=syntaxcomplete#Complete " Enable omnicompletion (to use, hold Ctrl+X then Ctrl+O while in Insert mode.)
 
 augroup quotable            " Enable typographic quotes in markdown and txt
-autocmd!
-autocmd FileType markdown call quotable#init()
-autocmd FileType textile call quotable#init()
-autocmd FileType python call quotable#init({ 'educate': 0 })
+  autocmd!
+  autocmd FileType markdown call quotable#init()
+  autocmd FileType textile call quotable#init()
+  autocmd FileType python call quotable#init({ 'educate': 0 })
 augroup END
 
 " Timestamp on <F4>
@@ -30,4 +31,3 @@ augroup END
 
 "set listchars=tab:\|\<Space> "It was a vertical line showing the Tab characters.
 "set smarttab                 " Use tabs at the start of a line, spaces elsewhere
-"colorscheme molokai         " set colorscheme
